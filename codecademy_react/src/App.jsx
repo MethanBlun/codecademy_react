@@ -3,12 +3,14 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 const bigDiv = <div className='bigDiv'>I AM A BIG ONE</div>
+const theBestString = 'This text was accessed through a javascript variable';
 function App() {
 
 
   return (
     <>
-    
+    {bigDiv}
+    <h1>{theBestString}</h1>
     
     </>
   )
