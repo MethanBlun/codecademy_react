@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
 import CryptoJS from 'crypto-js';
 
@@ -16,10 +16,13 @@ const people = ['Rowe', 'Prevost', 'Gare'];
 const peopleList = people.map(function(person,index){
 
 
-const key = CryptoJS.SHA1(person ).toString();
+const key = CryptoJS.SHA1(person + index).toString();
 return <li key={key}>{person}{key}</li>
 })
 
+const justAdiv = React.createElement(
+  'div',null,'hollydiv'
+)
 
 function App() {
 
@@ -28,6 +31,7 @@ function App() {
     <> 
    
     <ul>{peopleList}</ul>
+    <div>{justAdiv}</div>
   
     </>
   )
