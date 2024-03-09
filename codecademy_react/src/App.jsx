@@ -1,11 +1,25 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-const people = ['Rowe', 'Prevost', 'Gare'];
+import CryptoJS from 'crypto-js';
 
-const peopleList = people.map(function(Person,id){
-  return <li key={id}>{Person}{id}</li>
+
+
+
+
+
+
+
+const people = ['Rowe', 'Prevost', 'Gare'];
+// const CryptoJS = require("crypto-js");
+
+const peopleList = people.map(function(person,index){
+
+
+const key = CryptoJS.SHA1(person ).toString();
+return <li key={key}>{person}{key}</li>
 })
+
 
 function App() {
 
@@ -14,7 +28,7 @@ function App() {
     <> 
    
     <ul>{peopleList}</ul>
-    <p>{peopleList.key}</p>
+  
     </>
   )
 }
