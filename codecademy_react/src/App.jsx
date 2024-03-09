@@ -3,12 +3,9 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 const people = ['Rowe', 'Prevost', 'Gare'];
 
-const peopleList = people.map((person,i) =>
-
-  <li key={ + i}>{person} {person + i} </li>,
-
-);
-
+const peopleList = people.map(function(Person,id){
+  return <li key={id}>{Person}{id}</li>
+})
 
 function App() {
 
@@ -17,6 +14,7 @@ function App() {
     <> 
    
     <ul>{peopleList}</ul>
+    <p>{peopleList.key}</p>
     </>
   )
 }
