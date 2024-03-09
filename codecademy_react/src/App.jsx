@@ -5,7 +5,7 @@ const people = ['Rowe', 'Prevost', 'Gare'];
 
 const peopleList = people.map((person,i) =>
 
-  <li>{person}</li>
+  <li key={ + i}>{person} {person + i} </li>,
 
 );
 
@@ -14,8 +14,8 @@ function App() {
 
 
   return (
-    <>
-    llll
+    <> 
+   
     <ul>{peopleList}</ul>
     </>
   )
