@@ -15,4 +15,5 @@
 .myDiv{
   background-color: rebeccapurple;
   border: solid 2px rebeccapurple;
+  @include border-radius(19px)
 }
