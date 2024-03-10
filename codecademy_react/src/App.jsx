@@ -20,9 +20,7 @@ const key = CryptoJS.SHA1(person + index).toString();
 return <li key={key}>{person}{key}</li>
 })
 
-const justAdiv = React.createElement(
-  'div',null,'hollydiv'
-)
+
 
 function App() {
 
@@ -30,8 +28,8 @@ function App() {
   return (
     <> 
    
-    <ul>{peopleList}</ul>
-    <div>{justAdiv}</div>
+    <ul className='myDiv'>{peopleList}</ul>
+
   
     </>
   )
