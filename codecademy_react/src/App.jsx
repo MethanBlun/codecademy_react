@@ -7,18 +7,22 @@ import CryptoJS from 'crypto-js';
 
 
 
+function QuoteMaker() {
+  return (
+    <blockquote>
+      <p>
+        The world is full of objects, more or less interesting; I do not wish to add any more.
+      </p>
+      <cite>
+        <a target="_blank"
+          href="https://en.wikipedia.org/wiki/Douglas_Huebler">
+          Douglas Huebler
+        </a>
+      </cite>
+    </blockquote>
+  );
+};
 
-
-
-const people = ['Rowe', 'Prevost', 'Gare'];
-// const CryptoJS = require("crypto-js");
-
-const peopleList = people.map(function(person,index){
-
-
-const key = CryptoJS.SHA1(person + index).toString();
-return <li key={key}>{person}{key}</li>
-})
 
 
 
@@ -28,7 +32,7 @@ function App() {
   return (
     <> 
    
-    <ul className='myDiv'>{peopleList}</ul>
+    <QuoteMaker></QuoteMaker>
 
   
     </>
