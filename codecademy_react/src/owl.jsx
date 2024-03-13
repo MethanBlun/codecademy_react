@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import Product from './App'
 
 const owl = {
   
@@ -34,7 +34,7 @@ function Owl() {
     <ButtonSi/>
     <img className="ibreuMonkey" src={ibreuMonkey.src} alt="" />
 
-
+    <Product name='it works'/>
       </>
   );
 }
