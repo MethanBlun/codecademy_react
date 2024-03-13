@@ -9,6 +9,8 @@ import CryptoJS from 'crypto-js';
 
 function QuoteMaker() {
   return (
+    <>
+   
     <blockquote>
       <p>
         The world is full of objects, more or less interesting; I do not wish to add any more.
@@ -20,6 +22,8 @@ function QuoteMaker() {
         </a>
       </cite>
     </blockquote>
+</>
+
   );
 };
 

@@ -7,6 +7,8 @@ const owl = {
   title: "Excellent Owl",
   src: "https://content.codecademy.com/courses/React/react_photo-owl.jpg",
 };
+
+
 function ButtonSi() {
     function handleclick(){
       return alert('fuck !! i was clicked')
@@ -15,6 +17,7 @@ function ButtonSi() {
     </button>
 }
 
+const ibreuMonkey = {src:"https://content.codecademy.com/courses/React/react_photo-monkeyselfie.jpg"  }
 function Owl() {
   return (
     <>
@@ -29,7 +32,8 @@ function Owl() {
       />
     </div>
     <ButtonSi/>
-    
+    <img className="ibreuMonkey" src={ibreuMonkey.src} alt="" />
+
 
       </>
   );
