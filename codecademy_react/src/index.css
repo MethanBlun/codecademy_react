@@ -76,3 +76,8 @@ button:focus-visible {
 .myDiv{
   border: solid 2px rebeccapurple;
 } */
+
+.theOwl {
+   max-width: 100px;
+   max-height: 90px;
+}

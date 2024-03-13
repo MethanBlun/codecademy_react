@@ -32,7 +32,7 @@ function App() {
   return (
     <> 
    
-    <QuoteMaker></QuoteMaker>
+    <QuoteMaker/>
 
   
     </>
