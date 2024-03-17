@@ -16,6 +16,15 @@ function ButtonSi() {
     return <button onClick={handleclick}> dont click here
     </button>
 }
+function DisplayeSong(props){
+  <>
+ 
+  <h1>{props.singer}</h1>
+  <h2>{props.singerName}</h2>
+  
+ 
+  </>
+}
 
 const ibreuMonkey = {src:"https://content.codecademy.com/courses/React/react_photo-monkeyselfie.jpg"  }
 function Owl() {
@@ -34,7 +43,7 @@ function Owl() {
     <ButtonSi/>
     <img className="ibreuMonkey" src={ibreuMonkey.src} alt="" />
 
-    <Product name='it works'/>
+<DisplayeSong/>
       </>
   );
 }
