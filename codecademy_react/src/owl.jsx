@@ -11,19 +11,25 @@ const owl = {
 
 function ButtonSi() {
     function handleclick(){
-      return alert('fuck !! i was clicked')
+      return alert('!! i was clicked')
     }
     return <button onClick={handleclick}> dont click here
     </button>
 }
+function buttonHandleClick(){
+  alert('i was nddnndn')
+}
 function DisplayeSong(props){
+  return(
+
+  
+  
   <>
- 
   <h1>{props.singer}</h1>
   <h2>{props.singerName}</h2>
-  
- 
-  </>
+  <button onClick={buttonHandleClick}>{props.name}</button>
+ </>
+  )
 }
 
 const ibreuMonkey = {src:"https://content.codecademy.com/courses/React/react_photo-monkeyselfie.jpg"  }
@@ -43,7 +49,7 @@ function Owl() {
     <ButtonSi/>
     <img className="ibreuMonkey" src={ibreuMonkey.src} alt="" />
 
-<DisplayeSong/>
+      <DisplayeSong  singer='jack Stauber' singerName='fine life' name='did i work'/>
       </>
   );
 }

@@ -34,7 +34,7 @@ function App() {
 
   return (
     <> 
-   
+    <Product/>
     <QuoteMaker/>
 
   
