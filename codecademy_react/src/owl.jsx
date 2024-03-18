@@ -16,17 +16,19 @@ function ButtonSi() {
     return <button onClick={handleclick}> dont click here
     </button>
 }
-function buttonHandleClick(){
-  alert('i was nddnndn')
-}
-function DisplayeSong(props){
-  return(
 
-  
-  
+function DisplayeSong(props){
+  function buttonHandleClick(){
+  alert('i was clicked')
+}
+  function helloWorld(){
+  return alert('hand wash plaese befaore eating')
+  }
+  return(
   <>
   <h1>{props.singer}</h1>
   <h2>{props.singerName}</h2>
+  <h2>{props.helloWorld}</h2>
   <button onClick={buttonHandleClick}>{props.name}</button>
  </>
   )
@@ -49,7 +51,7 @@ function Owl() {
     <ButtonSi/>
     <img className="ibreuMonkey" src={ibreuMonkey.src} alt="" />
 
-      <DisplayeSong  singer='jack Stauber' singerName='fine life' name='did i work'/>
+      <DisplayeSong helloWorld={helloWorld} singer='jack Stauber' singerName='fine life' name='did i work'/>
       </>
   );
 }
