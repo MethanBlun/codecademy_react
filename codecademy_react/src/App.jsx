@@ -8,13 +8,12 @@ import Article from './Article';
 
 
 
-
 const App = () => {
 
   return (
     <>
     <h3>Hunderstand proooops</h3>
-    <Article/>
+    <Article title='haiphong'/>
     </>
   )
 }
