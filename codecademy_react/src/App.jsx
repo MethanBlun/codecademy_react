@@ -1,22 +1,24 @@
 
 import React, { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
-import CryptoJS from 'crypto-js';
+// import CryptoJS from 'crypto-js';
+import Article from './Article';
 
 
 
 
 
 
+const App = () => {
 
-
-
-
-function App() {
-
-
-  return
+  return (
+    <>
+    <h3>Hunderstand proooops</h3>
+    <Article/>
+    </>
+  )
 }
+
 
 export default App
 
