@@ -8,7 +8,8 @@ function Article(props){
     return (<>
   
         <h2>{props.title}</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure! Totam, sequi a harum minus est commodi repellendus et veritatis? Iure assumenda sint, consectetur impedit veritatis ratione consequatur saepe distinctio?</p>
+        <p>{props.paragraph}</p>
+        {props.children}
      </> )
 };
 
