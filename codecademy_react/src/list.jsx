@@ -10,8 +10,12 @@ function List(props) {
     <div>
       <h1>{titleText}</h1>
       <ul>{props.children}</ul>
+      <h2>{props.try}</h2>
     </div>
   );
+}
+List.defaultProps = {
+  try:'happpy'
 }
 
 export default List;

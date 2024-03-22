@@ -14,10 +14,12 @@ function App() {
         <li>Sachiko M</li>
         <li>Harvey Sid Fisher</li>
       </List>
-      <List type='Living Cat Musician'>
+      <List  type='Living Cat Musician'>
         <li>Nora the Piano Cat</li>
         <li> from hell</li>
       </List>
+
+      
     </div>
   );
 }
