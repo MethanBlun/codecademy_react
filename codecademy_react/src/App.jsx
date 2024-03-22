@@ -2,27 +2,24 @@
 import React, { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
 // import CryptoJS from 'crypto-js';
-import Article from './Article';
 
 
+import List from './list';
 
 
-
-const App = () => {
-
+function App() {
   return (
-    <>
-    <h3></h3>
-    <Article title='haiphong'/>
-    <Article>
-      <p>marchooooooooooooooooooon</p>
-      <p>ddkdk</p>
-    </Article>
-  
-    <Article paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure! Totam, sequi a harum minus est commodi repellendus et veritatis? Iure assumenda sint, consectetur impedit veritatis ratione consequatur saepe distinctio?'/>
-    <Article title='tries'/>
-    </>
-  )
+    <div>
+      <List type='Living Musician'>
+        <li>Sachiko M</li>
+        <li>Harvey Sid Fisher</li>
+      </List>
+      <List type='Living Cat Musician'>
+        <li>Nora the Piano Cat</li>
+        <li> from hell</li>
+      </List>
+    </div>
+  );
 }
 
 
