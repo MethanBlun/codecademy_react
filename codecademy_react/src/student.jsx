@@ -1,8 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
-// const Student = (props) => {
-//   <h1>{props.name}</h1>
-// }
+
 function Student(props) {
   return (
     <>
@@ -11,6 +10,12 @@ function Student(props) {
       <h3> is this student a lazy : {props.isStudentRich ?  'yes' : 'no'}</h3>
     </>
   );
+}
+
+Student.propTypes = {
+  name : PropTypes.string,
+  age : PropTypes.number,
+  isStudentRich : PropTypes.bool,
 }
 
 export default Student;
