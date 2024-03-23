@@ -15,7 +15,7 @@ function List(props) {
   );
 }
 List.defaultProps = {
-  try:'happpy'
+  try:'happy'
 }
 
 export default List;
