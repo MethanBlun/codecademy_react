@@ -17,5 +17,9 @@ Student.propTypes = {
   age : PropTypes.number,
   isStudentRich : PropTypes.bool,
 }
+Student.defaultProps = {
+  name: 'Guest',
+  age : 0,
+}
 
 export default Student;
