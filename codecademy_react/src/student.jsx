@@ -24,6 +24,6 @@ import PropTypes from 'prop-types'
 
 // export default Student;
 function GroceryItem(props) {
-  return (<button onClick={props.onClick}>{props.name}</button>
+  return (<button onClick={()=> props.onClick()}>{props.name}</button>
 )}
 export default GroceryItem;
