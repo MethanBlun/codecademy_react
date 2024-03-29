@@ -8,7 +8,7 @@ import { createRoot } from "react-dom/client";
 
    const myArray = [1,2,3,4,5,6,7,8]
 
-
+const doubleNumeber = myArray.map(n => n*2)
 
 function App() {
   
@@ -18,6 +18,8 @@ function App() {
 
 
   {myArray}
+  <hr />
+  {doubleNumeber}
     </>
   )
 }
