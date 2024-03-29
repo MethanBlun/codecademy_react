@@ -1,16 +1,25 @@
 import React, { createElement } from "react";
 import { createRoot } from "react-dom/client";
-import Student from "./student";
-import GroceryItem from "./student";
+
 // import CryptoJS from 'crypto-js';
 
+
+
+
+   const myArray = [1,2,3,4,5,6,7,8]
+
+
+
 function App() {
-  const handleClick = () => {
-    alert('yen a plus')
-  }
+  
+
   return (
-   <GroceryItem name='kk' onClick={handleClick} />
-  );
+    <>
+
+
+  {myArray}
+    </>
+  )
 }
 
 export default App;
