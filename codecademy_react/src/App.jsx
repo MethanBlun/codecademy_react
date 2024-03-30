@@ -1,29 +1,16 @@
 import React, { useState } from "react";
 
-const validPhoneNumber = /^\d{1,10}$/;
+function Counter() {
+  const [count, setCount] = useState(0);
+  const increment = () => setCount((prevCount) => prevCount + 1);
 
-function PhoneNumber() {
-  const [phone, setPhone] = useState("");
-  const handleChange = ({ target }) => {
-    const newPhone = target.value;
-    const isValid = validPhoneNumber.test(newPhone);
-    if (isValid) {
-      setPhone(newPhone);
-    }
-  };
-
-  return (
-    <>
-      <label htmlFor="phone-input">Phone: </label>
-      <input onChange={handleChange} value={phone} id="phone-input" />
-    </>
-  );
+  return <button onClick={increment}>{count}</button>;
 }
 
 function App() {
   return (
     <>
-      <PhoneNumber />
+      <Counter />
     </>
   );
 }
