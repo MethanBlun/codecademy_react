@@ -1,28 +1,29 @@
-
-import { createRoot } from "react-dom/client";
-
 import React, { useState } from "react";
 
+const validPhoneNumber = /^\d{1,10}$/;
 
-
-
-
- 
-function App() {
-  const [color , setColor] = useState()
-  const buttonStyle = {
-    backgroundColor: color,
-    
-  }
+function PhoneNumber() {
+  const [phone, setPhone] = useState("");
+  const handleChange = ({ target }) => {
+    const newPhone = target.value;
+    const isValid = validPhoneNumber.test(newPhone);
+    if (isValid) {
+      setPhone(newPhone);
+    }
+  };
 
   return (
-
-      
-   
     <>
+      <label htmlFor="phone-input">Phone: </label>
+      <input onChange={handleChange} value={phone} id="phone-input" />
+    </>
+  );
+}
 
-   <button style={buttonStyle} onClick={() => setColor('red')}>broken button</button>
-
+function App() {
+  return (
+    <>
+      <PhoneNumber />
     </>
   );
 }
