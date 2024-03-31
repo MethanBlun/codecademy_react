@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 
 
-
+const  myArray = [1,2,3,4,5,6,7]
+const mySecArray = [ 'e','foru']
+const testArrray = [...myArray]
 function App() {
 
- const  myArray = [1,2,3,4,5,6,7]
+ 
    const [indexQuestion,setIndexquestion] = useState(0);
 
    const goBack = () => setIndexquestion(prevI => prevI -1)
@@ -24,7 +26,7 @@ function App() {
   return (
     <>
 <MyDiv />
-  {alert(myArray.includes(2))}
+  {alert(testArrray)}
     </>
   );
 }
