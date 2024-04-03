@@ -1,10 +1,7 @@
 import React, { useState } from "react"
 
+const options = ['pomme','banana','hall','dakkar','kanni']
 
-const  myArray = [1,2,3,4,5,6,7]
-const mySecArray = [ 'e','foru']
-const testArrray = [...myArray]
-const filteredArrays = myArray.filter((array) => array >= 3);
 function App() {
 
  
@@ -26,8 +23,9 @@ function App() {
 
   return (
     <>
-<MyDiv />
-  {alert(filteredArrays)}
+
+
+{options.map((option) => <button value={option}>{option}</button>)}
     </>
   );
 }
