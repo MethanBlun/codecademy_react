@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 const options = ['pomme','banana','hall','dakkar','kanni']
 
+
 function App() {
 
  
@@ -25,7 +26,7 @@ function App() {
     <>
 
 
-{options.map((option) => <button value={option}>{option}</button>)}
+{options.map((option , index) => <button key={index} value={option}>{option}</button>)}
     </>
   );
 }
