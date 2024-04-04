@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      
-      <p>{arr.map((chiffre) => chiffre.toString(2))}</p>
+      <p>{arr.filter((n) => n % 2 ===0 )}</p>
 
     </>
   );
