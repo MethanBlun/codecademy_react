@@ -1,32 +1,21 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-const options = ['pomme','banana','hall','dakkar','kanni']
+
+const arr = [1,2,3,4,5,6,7,8,9,0]
+
+
+
 
 
 function App() {
-
- 
-   const [indexQuestion,setIndexquestion] = useState(0);
-
-   const goBack = () => setIndexquestion(prevI => prevI -1)
-  const goNext = () => setIndexquestion(prevI => prevI + 1)
-  function MyDiv() {
-    return <> <span>question#{indexQuestion}</span>
-    <button  onClick={goBack}> go back</button>
-    <button onClick={goNext}>next question</button>
-    
-    
-    </>
-    
-  }
-
+  const [selected,setSelected] = useState([]);
 
 
   return (
     <>
+     
+      <p>{arr.map((chiffre) => chiffre.toString(2))}</p>
 
-
-{options.map((option , index) => <button key={index} value={option}>{option}</button>)}
     </>
   );
 }
