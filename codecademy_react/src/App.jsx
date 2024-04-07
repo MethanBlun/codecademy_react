@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 
-const array = ['']
+
 
 function App() {
-  const [selected, setSelected] = useState([]);
+
 
   return (
     <>
  
+      <form action="App.jsx">
+        <label id="textInput" htmlFor="text input">saisiser votre nom</label>
+        <input id="textInput" type="text" />
 
+
+      </form>
 
     </>
   );
