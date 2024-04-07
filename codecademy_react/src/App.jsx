@@ -1,20 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+
+
+
+
 
 
 
 function App() {
-
+  const [title, setTitle] = useState("");
+  const [firstname, setFirstname] = useState("");
+  useEffect(()=>{},[])
 
   return (
     <>
- 
-      <form action="App.jsx">
-        <label id="textInput" htmlFor="text input">saisiser votre nom</label>
-        <input id="textInput" type="text" />
+      <div>
+        <input 
+        type="text" 
+        value={title} 
+        onChange={setTitle} 
+        />
 
+<input 
+        type="text" 
+        value={firstname} 
+        onChange={setFirstname} 
+        />
 
-      </form>
-
+      </div>
     </>
   );
 }
