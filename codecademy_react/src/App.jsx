@@ -1,38 +1,27 @@
 import React, { useEffect, useState } from "react";
 
-
-
-function AlertExample() {
-  const [showAlert, setShowAlert] = useState(true);
+function Testfunction() {
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowAlert(false);
-    }, 5000); // Le composant restera monté pendant 5 secondes
-
+    document.title = "New Title";
     return () => {
-      clearTimeout(timeout);
-      alert('Le composant sera démonté !');
+      document.title = "Previous Title";
     };
-  }, []);
+  }, [count]);
 
   return (
-    <div>
-      {showAlert && <h1>Le composant est monté !</h1>}
-      {!showAlert && <h1>Le composant est démonté !</h1>}
+    <div >
+      <button onClick={() => setCount(prev => prev + 1)}>{count}</button>
     </div>
+  
   );
 }
 
-
-
-
 function App() {
-  
-
   return (
     <>
-<AlertExample/>
+      <Testfunction />
     </>
   );
 }
