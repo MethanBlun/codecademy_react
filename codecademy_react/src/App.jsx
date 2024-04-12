@@ -8,9 +8,10 @@ function PageTitle() {
   };
   useEffect(() => {
     document.addEventListener("keydown", increment);
-
+    return document.removeEventListener("keydown", increment)
   });
 
+  
   return (
     <div>
       <h1>Document Clicks: {clickCount}</h1>
