@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
 
 function PageTitle() {
-  const [name, setName] = useState("");
+  const [clickCount, setClickCount] = useState(0);
 
+  const increment = () => {
+    setClickCount((prev) => prev + 1);
+  };
   useEffect(() => {
-    document.title = `Hi, ${name}`;
-    console.log("i am executed :");
+    document.addEventListener("keydown", increment);
+
   });
 
   return (
     <div>
-      <p>changer le title ici : </p>
-      <input onChange={({target}) => setName(target.value)} type="text" />
+      <h1>Document Clicks: {clickCount}</h1>
     </div>
   );
 }
