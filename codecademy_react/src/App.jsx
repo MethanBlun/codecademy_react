@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 function PageTitle() {
-  const [name, setName] = useState('');
- 
+  const [name, setName] = useState("");
+
   useEffect(() => {
     document.title = `Hi, ${name}`;
-    console.log('i am executed :')
-  },[]);
- 
+    console.log("i am executed :");
+  });
+
   return (
     <div>
-      <p>Use the input field below to rename this page!</p>
-      <input onChange={({target}) => setName(target.value)} value={name} type='text' />
+      <p>changer le title ici : </p>
+      <input onChange={({target}) => setName(target.value)} type="text" />
     </div>
   );
 }
@@ -19,7 +19,7 @@ function PageTitle() {
 function App() {
   return (
     <>
-< PageTitle/>
+      <PageTitle />
     </>
   );
 }
