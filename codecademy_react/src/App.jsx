@@ -1,27 +1,25 @@
 import React, { useEffect, useState } from "react";
 
-function Testfunction() {
-  const [count, setCount] = useState(0);
-
+function PageTitle() {
+  const [name, setName] = useState('');
+ 
   useEffect(() => {
-    document.title = "New Title";
-    return () => {
-      document.title = "Previous Title";
-    };
-  }, [count]);
-
+    document.title = `Hi, ${name}`;
+    console.log('i am executed :')
+  },[]);
+ 
   return (
-    <div >
-      <button onClick={() => setCount(prev => prev + 1)}>{count}</button>
+    <div>
+      <p>Use the input field below to rename this page!</p>
+      <input onChange={({target}) => setName(target.value)} value={name} type='text' />
     </div>
-  
   );
 }
 
 function App() {
   return (
     <>
-      <Testfunction />
+< PageTitle/>
     </>
   );
 }
