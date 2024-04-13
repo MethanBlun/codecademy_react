@@ -1,31 +1,25 @@
 import React, { useEffect, useState } from "react";
 
-function PageTitle() {
-  const [clickCount, setClickCount] = useState(0);
-
-  // const increment = () => {
-  //   setClickCount((prev) => prev - 0.01);
-  // };
+function Timer() {
+  const [time, setTime] = useState(0);
   useEffect(() => {
-    alert('welcome to the brand new website , realise your dream , work everyday ')
-    // document.addEventListener("keydown", increment);
-    // alert(clickCount)
-    // return document.removeEventListener("keydown", increment)
+    setInterval(()=>{setTime((prev)=> prev + 1)},2000)
   },[]);
 
-    
-
-  return (    
-    <div>
-      <h1>Document Clicks: {clickCount}</h1>
-    </div>
+  //  const intervalId = setInterval(() => {setTime ((prev)=> prev + 1);})
+  // function intervalId(){
+  //   setInterval(()=>{setTime((prev) => prev + 1)})
+  // }
+  return (
+    <>
+      <h1>Time: {time}</h1>
+    </>
   );
 }
-
 function App() {
   return (
     <>
-      <PageTitle />
+      <Timer />
     </>
   );
 }
