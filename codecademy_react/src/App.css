@@ -1,11 +1,11 @@
  #root {
 
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* margin: 0 auto;
+  padding: 2rem; */
   text-align: center;
 }
-
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -41,6 +41,30 @@
 .read-the-docs {
   color: #888;
 } 
+ */
 
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Hauteur de la fenêtre du navigateur */
+}
 
+header {
+  height: 25%; /* 25% de la hauteur de la fenêtre */
+  background-color: blueviolet;
+}
+
+main {
+  height: 75%; 
+  background-color: blanchedalmond;
+}
+
+footer {
+ background-color: aqua;
+}
+
+.container {
+  /* Style du container */
+}
 
